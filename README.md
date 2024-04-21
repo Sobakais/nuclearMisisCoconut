@@ -23,17 +23,23 @@
 
 
   В ходе работы мы решили провести исследование. В темное время суток, когда силуэт человека и сигареты тяжело зафиксировать камере видеонаблюдения, детектить сигарету можно по горящему концу. В темноте его будет видно как четко выражающийся красный объект. Для исследования мы создали свой датасет. Сфотографировались на плохо освещенной территории с подоженной сигаретой. Далее, полученные изображения мы разметили и собрали из них датасет, добавив еще одну группу изображений из открытых источников. Модель справлялась с детекцией, но по хорошему её нужно дообучать. Данную модель можно объединить с основной, и получить улучшенные метрики обнаружения сигареты у человека. 
-![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg)
-![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg)
-![Метрика-3](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg)
+
+<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg" alt="Метрика-1" style="max-width:33%;">
+<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg" alt="Метрика-2" style="max-width:33%;">
+<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg" alt="Метрика-3" style="max-width:33%;">
+
+<!-- ![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg) -->
+<!-- ![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg) -->
+<!-- ![Метрика-3](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg) -->
 - ![RedLightNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/RedLight.ipynb)
 - ![RedLightModel](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/red_light_model.pt)
 
   В дополнении мы решили попробовать детекцию дыма. Будем определять дым от зажженой сигареты. Обучили модель по имеющемуся датасету. Получили хорошие метрики. Данную модель можно использовать вместе с основной, для более точного обнаружения курения.
-Скрин метрик:
+![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/SmokeDetectMetrica1.jpg)
+![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/SmokeDetectMetrica2.jpg)
 Colab:
 
-Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
+  Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
 Скрин метрик:
 Kaggle:
 
