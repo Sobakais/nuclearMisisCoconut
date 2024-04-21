@@ -3,10 +3,10 @@
 ### Название команды: MISIScoconut
 
 #### Участники команды:
-- Дмитрий Уросов (@dmmmit)
-- Михаил Гумиров (@mishka_gumer)
-- Мария Хайдукова (@cvvup)
-- Данил Синицын (@FFHKJQ)
+- <a href="https://t.me/dmmmit">Дмитрий Уросов</a>
+- <a href="https://t.me/mishka_gumer">Михаил Гумиров</a>
+- <a href="https://t.me/cvvup">Мария Хайдукова</a>
+- <a href="https://t.me/FFHKJQ">Синицын Данил</a>
 
 #### Обзор
  Цель - обучить модель YOLOv8 для обнаружения того, курит ли человек в запрещенной зоне на скриншотах с видеокамер наблюдения. Обнаружение курения в запрещенных зонах может помочь в соблюдении политики запрета курения и улучшении соблюдения этого правила.
@@ -45,7 +45,9 @@
   <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/SmokeDetectMetrica1.jpg" alt="Метрика-1" style="width:45%;">
   <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/SmokeDetectMetrica2.jpg" alt="Метрика-2" style="width:45%;">
 </p>
-Colab:
+
+-![SmokeDetectNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/SmokeDetect.ipynb)
+-![SmokeDetectModel](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/smoke_model.pt)
 
   Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
 Скрин метрик:
@@ -53,7 +55,7 @@ Kaggle:
 
 Для удобной работы с основной моделью мы собрали тг бота, который принимает изображение, обрабатывает и отправляет полученное предсказание в процентах пользователю.
 Ссылка на Telegram бота: 
-
+<a href="https://t.me/misis_coconut_bot">Telegram Bot</a>
 
 #### Планы по улучшению
 - Точная настройка модели для лучшей производительности обнаружения.
