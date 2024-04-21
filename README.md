@@ -1,24 +1,42 @@
-### Project Title: Detecting Smoking in Restricted Areas
+## Обнаружение курения в запрещенных зонах
 
-### Team Name: MISIScoconut
+### Название команды: MISIScoconut
 
-#### Team Members
-- Dmitriy Urosov  (@dmmmit)
-- Mihail Gumirov  (@mishka_gumer)
-- Maria Haudukova (@cvvup)
-- Danil Sinitsin  (@FFHKJQ)
+#### Участники команды:
+- Дмитрий Уросов (@dmmmit)
+- Михаил Гумиров (@mishka_gumer)
+- Мария Хайдукова (@cvvup)
+- Данил Синицын (@FFHKJQ)
 
-#### Overview
-This project is a submission by Team MISIScoconut for the Nuclear IT Hack hackathon. The goal of the project is to train a YOLOv8 model to detect whether there is a person smoking in a restricted area from CCTV screenshots. The detection of smoking in prohibited areas can help in enforcing no-smoking policies and improving compliance.
+#### Обзор
+ Цель - обучить модель YOLOv8 для обнаружения того, курит ли человек в запрещенной зоне на скриншотах с видеокамер наблюдения. Обнаружение курения в запрещенных зонах может помочь в соблюдении политики запрета курения и улучшении соблюдения этого правила.
 
-#### Project Structure
-- data: Contains the dataset people smoking in different circumstances for training and testing the model.
-- models: Includes the YOLOv8 model architecture and weights after training.
-- scripts: Contains scripts for data preprocessing, model training, and inference.
-- results: Stores the results of model evaluation and detection on test images.
 
-#### Future Improvements
-- Fine-tuning the model for better detection performance.
-- Include pose detection in the model.
-- Integration via biometric data to fine citizens.
+#### Ход работы
+  Сперва мы решили взять доступные датасеты в интернете и обучить модель по ним. В датасете было около 3000 размеченных изображений, около 1000 мы разметили самостоятельно. После обучения модели по этому датасету, мы получили не очень хорошие результаты. Сигареты на представленном заказчиками датасете определялась плохо. На фоне 3 тыс изображений, 76 представленных замыливались. Из-за этого мы получали не очень хороший результат.
+![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg) 
+![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg) 
+![Метрика-3](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg)
+![Метрика-4](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg)
+![BigDataNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/BigData.ipynb)
 
+  В ходе работы мы решили провести исследование. В темное время суток, когда силуэт человека и сигареты тяжело зафиксировать камере видеонаблюдения, детектить сигарету можно по горящему концу. В темноте его будет видно как четко выражающийся красный объект. Для исследования мы создали свой датасет. Сфотографировались на плохо освещенной территории с подоженной сигаретой. Далее, полученные изображения мы разметили и собрали из них датасет, добавив еще одну группу изображений из открытых источников. Модель справлялась с детекцией, но по хорошему её нужно дообучать. Данную модель можно объединить с основной, и получить улучшенные метрики обнаружения сигареты у человека. 
+Скрин метрик:
+Kaggle: 
+
+  В дополнении мы решили попробовать детекцию дыма. Будем определять дым от зажженой сигареты. Обучили модель по имеющемуся датасету. Получили хорошие метрики. Данную модель можно использовать вместе с основной, для более точного обнаружения курения.
+Скрин метрик:
+Colab:
+
+Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
+Скрин метрик:
+Kaggle:
+
+Для удобной работы с основной моделью мы собрали тг бота, который принимает изображение, обрабатывает и отправляет полученное предсказание в процентах пользователю.
+Ссылка на Telegram бота: 
+
+
+#### Планы по улучшению
+- Точная настройка модели для лучшей производительности обнаружения.
+- Включить обнаружение позы человека в модель.
+- Интеграция с базой данных биометрии (Сбер, mos.ru), для определения личности и автоматического выписывания штрафов нарушителям
