@@ -15,19 +15,26 @@
 #### Ход работы
   Сперва мы решили взять доступные датасеты в интернете и обучить модель по ним. В датасете было около 3000 размеченных изображений, около 1000 мы разметили самостоятельно. После обучения модели по этому датасету, мы получили не очень хорошие результаты. Сигареты на представленном заказчиками датасете определялась плохо. На фоне 3 тыс изображений, 76 представленных замыливались. Из-за этого мы получали не очень хороший результат.
 
-![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg) ![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg) 
-![Метрика-3](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg)
-![Метрика-4](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg)
+<p align="center">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg" alt="Метрика-1" style="max-width:24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg" alt="Метрика-2" style="max-width:24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg" alt="Метрика-3" style="max-width:24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg" alt="Метрика-4" style="max-width:24%;">
+</p>
+
+<!-- ![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg) ![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg)  -->
+<!-- ![Метрика-3](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg) -->
+<!-- ![Метрика-4](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg) -->
 - ![BigDataNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/BigData.ipynb)
 - ![BigDataModel](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/big_data_model.pt)
 
 
   В ходе работы мы решили провести исследование. В темное время суток, когда силуэт человека и сигареты тяжело зафиксировать камере видеонаблюдения, детектить сигарету можно по горящему концу. В темноте его будет видно как четко выражающийся красный объект. Для исследования мы создали свой датасет. Сфотографировались на плохо освещенной территории с подоженной сигаретой. Далее, полученные изображения мы разметили и собрали из них датасет, добавив еще одну группу изображений из открытых источников. Модель справлялась с детекцией, но по хорошему её нужно дообучать. Данную модель можно объединить с основной, и получить улучшенные метрики обнаружения сигареты у человека. 
-  
+
 <p align="center">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg" alt="Метрика-1" style="max-width:33%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg" alt="Метрика-2" style="max-width:33%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg" alt="Метрика-3" style="max-width:33%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg" alt="Метрика-1" style="max-width:30%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg" alt="Метрика-2" style="max-width:30%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg" alt="Метрика-3" style="max-width:30%;">
 </p>
 
 <!-- ![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg) -->
