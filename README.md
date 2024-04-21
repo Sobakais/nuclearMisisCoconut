@@ -3,10 +3,10 @@
 ### Team Name: MISIScoconut
 
 #### Team Members
-- Dmitriy Urosov
-- Mihail Gumirov
-- Maria Haudukova
-- Danil Sinitsin
+- Dmitriy Urosov  (@dmmmit)
+- Mihail Gumirov  (@mishka_gumer)
+- Maria Haudukova (@cvvup)
+- Danil Sinitsin  (@FFHKJQ)
 
 #### Overview
 This project is a submission by Team MISIScoconut for the Nuclear IT Hack hackathon. The goal of the project is to train a YOLOv8 model to detect whether there is a person smoking in a restricted area from CCTV screenshots. The detection of smoking in prohibited areas can help in enforcing no-smoking policies and improving compliance.
@@ -21,3 +21,4 @@ This project is a submission by Team MISIScoconut for the Nuclear IT Hack hackat
 - Fine-tuning the model for better detection performance.
 - Include pose detection in the model.
 - Integration via biometric data to fine citizens.
+
