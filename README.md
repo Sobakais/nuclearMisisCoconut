@@ -16,10 +16,10 @@
   Сперва мы решили взять доступные датасеты в интернете и обучить модель по ним. В датасете было около 3000 размеченных изображений, около 1000 мы разметили самостоятельно. После обучения модели по этому датасету, мы получили не очень хорошие результаты. Сигареты на представленном заказчиками датасете определялась плохо. На фоне 3 тыс изображений, 76 представленных замыливались. Из-за этого мы получали не очень хороший результат.
 
 <p align="center">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg" alt="Метрика-1" style="max-width:24%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg" alt="Метрика-2" style="max-width:24%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg" alt="Метрика-3" style="max-width:24%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg" alt="Метрика-4" style="max-width:24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg" alt="Метрика-1" style="max-width:24%;width: 24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg" alt="Метрика-2" style="max-width:24%;width: 24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica3.jpg" alt="Метрика-3" style="max-width:24%;width: 24%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica4.jpg" alt="Метрика-4" style="max-width:24%;width: 24%;">
 </p>
 
 <!-- ![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica1.jpg) ![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/BigDataMetrica2.jpg)  -->
