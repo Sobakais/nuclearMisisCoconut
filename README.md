@@ -46,8 +46,8 @@
   <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/SmokeDetectMetrica2.jpg" alt="Метрика-2" style="width:45%;">
 </p>
 
--![SmokeDetectNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/SmokeDetect.ipynb)
--![SmokeDetectModel](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/smoke_model.pt)
+- ![SmokeDetectNOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/SmokeDetect.ipynb)
+- ![SmokeDetectModel](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/smoke_model.pt)
 
   Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
 Скрин метрик:
