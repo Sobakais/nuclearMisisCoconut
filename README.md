@@ -49,15 +49,9 @@
 - ![SmokeDetect NOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/SmokeDetect.ipynb)
 - ![SmokeDetect Model](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/smoke_model.pt)
 
-  Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди. Получили такие метрики:
-
-<p align="center">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/FinalMetrica1.jpg" alt="Метрика-1" style="width:45%;">
-  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/FinalMetrica2.jpg" alt="Метрика-2" style="width:45%;">
-</p>
+  Окончательная модель обучена на размеченных фотографий заказчиком плюс подобные фотографии с камер наблюдения где есть как курящие, так и не курящие люди.
 
 - ![Final NOTEBOOK](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/notebooks/Final.ipynb)
-- ![Final Model](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/models/final_model.pt)
 
 Для удобной работы с основной моделью мы собрали Telegram бота, который принимает изображение, обрабатывает и отправляет полученное предсказание в процентах пользователю.
 Ссылка на Telegram бота: 
