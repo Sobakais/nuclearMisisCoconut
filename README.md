@@ -23,10 +23,12 @@
 
 
   В ходе работы мы решили провести исследование. В темное время суток, когда силуэт человека и сигареты тяжело зафиксировать камере видеонаблюдения, детектить сигарету можно по горящему концу. В темноте его будет видно как четко выражающийся красный объект. Для исследования мы создали свой датасет. Сфотографировались на плохо освещенной территории с подоженной сигаретой. Далее, полученные изображения мы разметили и собрали из них датасет, добавив еще одну группу изображений из открытых источников. Модель справлялась с детекцией, но по хорошему её нужно дообучать. Данную модель можно объединить с основной, и получить улучшенные метрики обнаружения сигареты у человека. 
-
-<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg" alt="Метрика-1" style="max-width:33%;">
-<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg" alt="Метрика-2" style="max-width:33%;">
-<img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg" alt="Метрика-3" style="max-width:33%;">
+  
+<p align="center">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg" alt="Метрика-1" style="max-width:33%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg" alt="Метрика-2" style="max-width:33%;">
+  <img src="https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica3.jpg" alt="Метрика-3" style="max-width:33%;">
+</p>
 
 <!-- ![Метрика-1](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica1.jpg) -->
 <!-- ![Метрика-2](https://github.com/Sobakais/nuclearMisisCoconut/blob/main/source/metrics/RedLightMetrica2.jpg) -->
